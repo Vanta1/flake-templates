@@ -23,7 +23,6 @@ in
         {
           devShells.default = mkShell {
             inherit buildInputs nativeBuildInputs;
-            LD_LIBRARY_PATH = "${lib.makeLibraryPath buildInputs}";
             shellHook = ''
               echo "entering ${name} devshell..."
             '';
