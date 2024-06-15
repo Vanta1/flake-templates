@@ -14,15 +14,12 @@ in
         let
           pkgs = import nixpkgs {
             inherit system;
-          };
-          buildInputs = with pkgs; [ 
             zola
-          ];
+          };
         in
         with pkgs;
         {
           devShells.default = mkShell {
-            inherit buildInputs nativeBuildInputs;
             shellHook = ''
               echo "entering ${name} devshell..."
             '';
