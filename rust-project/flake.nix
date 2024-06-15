@@ -1,8 +1,5 @@
 # this is mostly from https://fasterthanli.me/series/building-a-rust-service-with-nix/part-10#a-flake-with-derivation
 
-let 
-  name = "Vanta1 default rust template";
-in
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.11";
@@ -16,6 +13,9 @@ in
     };
   };
   outputs = { self, nixpkgs, flake-utils, rust-overlay }:
+    let 
+      name = "Vanta1 default rust template";
+    in
     flake-utils.lib.eachDefaultSystem
       (system:
         let
