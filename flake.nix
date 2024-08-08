@@ -11,6 +11,10 @@
         path = ./rust-project;
         description = "Rust project starting point";
       };
+      cpp = {
+        path = ./cpp;
+        description = "C++";
+      };
     };
   };
 }
