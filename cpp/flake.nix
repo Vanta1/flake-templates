@@ -16,8 +16,7 @@
           nativeBuildInputs = with pkgs; [ pkg-config ];
           buildInputs = with pkgs; [ 
             # extra packages go here...
-            libgcc
-            curl
+            
           ];
         in
         with pkgs;

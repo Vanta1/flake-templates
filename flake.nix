@@ -1,7 +1,7 @@
 {
   description = "Vanta1's flake templates";
 
-  outputs = { self, ... }: {
+  outputs = { ... }: {
     templates = {
       my-zola-shell = {
         path = ./my-zola-shell;

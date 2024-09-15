@@ -1,3 +1,5 @@
+# this was rly just a test
+
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.11";
