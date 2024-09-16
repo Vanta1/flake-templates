@@ -3,17 +3,17 @@
 
   outputs = { ... }: {
     templates = {
-      my-zola-shell = {
-        path = ./my-zola-shell;
-        description = "Zola is the static site generator i use for my website";
-      };
-      rust-project = {
-        path = ./rust-project;
+      rust = {
+        path = ./rust;
         description = "Rust project starting point";
       };
       cpp = {
         path = ./cpp;
         description = "C++";
+      };
+      zola = {
+        path = ./zola;
+        description = "Zola is the static site generator i use for my website";
       };
     };
   };
